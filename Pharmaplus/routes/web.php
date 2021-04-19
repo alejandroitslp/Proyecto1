@@ -20,11 +20,11 @@ use Illuminate\Support\Facades\Mail;
 */
 
 Route::get('/', HomeController::class)->name('home');
-Route::resource('Productos', ProductoController::class)->names('productos')->parameters(['Productos'=>'producto']);
+//Route::resource('Productos', ProductoController::class)->names('productos')->parameters(['Productos'=>'producto']);
 //los parametros y nombres se ocupan para que funcione la ruta, de otra manera no funciona y manda un Route not defined y los parametros un missing parameter
 Route::view('nosotros', 'nosotros')->name('nosotros');
 Route::get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index');
 Route::post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+    return view('dashboard');})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->resource('Productos', ProductoController::class)->names('productos')->parameters(['Productos'=>'producto']);

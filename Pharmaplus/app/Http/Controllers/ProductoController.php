@@ -13,6 +13,8 @@ class ProductoController extends Controller
     {
         //
         $product = Producto::orderBy('nombre_producto','asc')->paginate();
+        //all();
+        
         
         return view('Productos.index',compact('product'));
     }
