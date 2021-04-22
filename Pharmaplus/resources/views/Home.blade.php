@@ -1,22 +1,19 @@
-@extends('layouts.plantilla')
-
-@section('title','Home')
-
-@section('content')
-
-@php
+<x-app-layout>
+    @php
     $color = 'indigo';
-@endphp
-
-<h1>Pagina del Home</h1>
-<div class="container mx-auto">
+    @endphp
     <x-alert :color="$color" class="mb-4">
         <x-slot name="title">
-            Titulo1
+            Aprovecha!
         </x-slot>
-        Aprovecha las ofertas unicas en nuestro sitio web
+        Tenemos ofertas unicas en nuestro sitio web
     </x-alert>
-</div>
-
-
-@endsection
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg ml-8">
+                 <h1>Home</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+</x-app-layout>

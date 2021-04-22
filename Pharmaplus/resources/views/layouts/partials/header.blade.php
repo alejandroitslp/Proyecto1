@@ -1,6 +1,6 @@
 <header>
     <div class="relative items-top justify-center bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-        @if (Route::has('login'))
+         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
                     <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
@@ -13,7 +13,7 @@
                 @endauth
             </div>
         @endif
-
+    
         <nav>
             <ul>
                 <li><a href="{{route('home')}}" class="{{request()->routeIs('home') ? 'active' : ''}}">Home</a>
@@ -28,7 +28,8 @@
                 </li>
             </ul>
         </nav>
+    </div> 
 
-    </div>
+    
     
 </header>

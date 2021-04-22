@@ -1,103 +1,110 @@
-@extends('layouts.plantilla')
+<x-app-layout>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg ml-8">
+                
+                <h1>Editar Producto </h1>
+                <br>
+                <form action="{{route('productos.update', $producto)}}" method="POST">
 
-@section('title','Editar Producto')
+                    @csrf
 
-@section('content')
-<h1>Pagina para editar Producto</h1>
-    <form action="{{route('productos.update', $producto)}}" method="POST">
+                    @method('put')
 
-        @csrf
+                    <label>
+                        Codigo de producto: 
+                        <br>
+                        <input type="text" name="codigo" value="{{old('codigo',$producto->cod_producto)}}" class="ml-8 mt-3">
+                    </label>
 
-        @method('put')
+                    @error('codigo')
+                        <br>
+                            <small>*{{$message}}</small>
+                        <br>
+                    @enderror
 
-        <label>
-            Codigo de producto: 
-            <br>
-            <input type="text" name="codigo" value="{{old('codigo',$producto->cod_producto)}}">
-        </label>
+                    <br>
+                    <label>
+                        Nombre:
+                        <br>
+                        <input class="ml-8 mt-3" type="text" name="name" value="{{old('name',$producto->nombre_producto)}}"> 
+                    </label>
 
-        @error('codigo')
-            <br>
-                <small>*{{$message}}</small>
-            <br>
-        @enderror
+                    @error('name')
+                        <br>
+                            <small>*{{$message}}</small>
+                        <br>
+                    @enderror
 
-        <br>
-        <label>
-             Nombre:
-             <br>
-             <input type="text" name="name" value="{{old('name',$producto->nombre_producto)}}"> 
-        </label>
+                    <br>
+                    <label>
+                        Descripcion:
+                        <br> 
+                        <textarea class="ml-8 mt-3" name="descripcion" rows="5">{{old('descripcion',$producto->descripcion_producto)}}</textarea>
+                    </label>
 
-        @error('name')
-            <br>
-                <small>*{{$message}}</small>
-            <br>
-        @enderror
+                    @error('descripcion')
+                        <br>
+                            <small>*{{$message}}</small>
+                        <br>
+                    @enderror
 
-        <br>
-        <label>
-            Descripcion:
-            <br> 
-            <textarea name="descripcion" rows="5">{{old('descripcion',$producto->descripcion_producto)}}</textarea>
-        </label>
+                    <br>
+                    <label>
+                        Unidad de Producto:
+                        <br>
+                        <input class="ml-8 mt-3" type="text" name="unidad" placeholder="Unidad" value="Unidad" readonly> 
+                    </label>
+                    <br>
+                    <label>
+                        Precio de Venta:
+                        <br>
+                        <input class="ml-8 mt-3" type="text" name="precioVenta" value="{{old('precioVenta',$producto->precio_producto)}}">
+                    </label>
 
-        @error('descripcion')
-            <br>
-                <small>*{{$message}}</small>
-            <br>
-        @enderror
+                    @error('precioVenta')
+                        <br>
+                            <small>*{{$message}}</small>
+                        <br>
+                    @enderror
 
-        <br>
-        <label>
-            Unidad de Producto:
-            <input type="text" name="unidad" placeholder="Unidad" value="Unidad" readonly> 
-        </label>
-        <br>
-        <label>
-            Precio de Venta:
-            <br>
-            <input type="text" name="precioVenta" value="{{old('precioVenta',$producto->precio_producto)}}">
-        </label>
+                    <br>
+                    <label>
+                        Precio de compra:
+                        <br>
+                        <input class="ml-8 mt-3" type="text" name="precioCompra" value="{{old('precioCompra',$producto->precio_compra)}}">
+                    </label>
 
-        @error('precioVenta')
-            <br>
-                <small>*{{$message}}</small>
-            <br>
-        @enderror
+                    @error('precioCompra')
+                        <br>
+                            <small>*{{$message}}</small>
+                        <br>
+                    @enderror
 
-        <br>
-        <label>
-            Precio de compra:
-            <input type="text" name="precioCompra" value="{{old('precioCompra',$producto->precio_compra)}}">
-        </label>
+                    <br>
+                    <label>
+                        Stock: 
+                        <br>
+                        <input class="ml-8 mt-3" type="text" name="stock" value="{{old('stock',$producto->stock_producto)}}">
+                    </label>
 
-        @error('precioCompra')
-            <br>
-                <small>*{{$message}}</small>
-            <br>
-        @enderror
+                    @error('stock')
+                        <br>
+                            <small>*{{$message}}</small>
+                        <br>
+                    @enderror
 
-        <br>
-        <label>
-            Stock: 
-            <br>
-            <input type="text" name="stock" value="{{old('stock',$producto->stock_producto)}}">
-        </label>
+                    <br>
+                    <label>
+                        Categoria: 
+                        <br>
+                        <input class="ml-8 mt-3" type="text" name="categoria" value="1" readonly placeholder="1 - Farmacia">
+                    </label>
+                    <br>
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-8 mt-3" type="submit"> Actualizar formulario</button>
+                </form>
 
-        @error('stock')
-            <br>
-                <small>*{{$message}}</small>
-            <br>
-        @enderror
-
-        <br>
-        <label>
-            Categoria: 
-            <input type="text" name="categoria" value="1" readonly placeholder="1 - Farmacia">
-        </label>
-        <br>
-        <button type="submit"> Actualizar formulario</button>
-    </form>
-    
-@endsection
+            </div>
+        </div>
+    </div>
+</x-app-layout>
