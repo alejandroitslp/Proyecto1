@@ -1,4 +1,4 @@
-/*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -5711,6 +5711,10 @@ select {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-home-pharmaplus {
+  background-image: url('/img/medicamentos.jpg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -9284,6 +9288,66 @@ select {
 }
 
 .focus\:bg-opacity-100:focus {
+  --tw-bg-opacity: 1;
+}
+
+.active\:bg-opacity-0:active {
+  --tw-bg-opacity: 0;
+}
+
+.active\:bg-opacity-5:active {
+  --tw-bg-opacity: 0.05;
+}
+
+.active\:bg-opacity-10:active {
+  --tw-bg-opacity: 0.1;
+}
+
+.active\:bg-opacity-20:active {
+  --tw-bg-opacity: 0.2;
+}
+
+.active\:bg-opacity-25:active {
+  --tw-bg-opacity: 0.25;
+}
+
+.active\:bg-opacity-30:active {
+  --tw-bg-opacity: 0.3;
+}
+
+.active\:bg-opacity-40:active {
+  --tw-bg-opacity: 0.4;
+}
+
+.active\:bg-opacity-50:active {
+  --tw-bg-opacity: 0.5;
+}
+
+.active\:bg-opacity-60:active {
+  --tw-bg-opacity: 0.6;
+}
+
+.active\:bg-opacity-70:active {
+  --tw-bg-opacity: 0.7;
+}
+
+.active\:bg-opacity-75:active {
+  --tw-bg-opacity: 0.75;
+}
+
+.active\:bg-opacity-80:active {
+  --tw-bg-opacity: 0.8;
+}
+
+.active\:bg-opacity-90:active {
+  --tw-bg-opacity: 0.9;
+}
+
+.active\:bg-opacity-95:active {
+  --tw-bg-opacity: 0.95;
+}
+
+.active\:bg-opacity-100:active {
   --tw-bg-opacity: 1;
 }
 
@@ -15880,63 +15944,63 @@ select {
   opacity: 1;
 }
 
-.disabled\:opacity-0:disabled {
+.active\:opacity-0:active {
   opacity: 0;
 }
 
-.disabled\:opacity-5:disabled {
+.active\:opacity-5:active {
   opacity: 0.05;
 }
 
-.disabled\:opacity-10:disabled {
+.active\:opacity-10:active {
   opacity: 0.1;
 }
 
-.disabled\:opacity-20:disabled {
+.active\:opacity-20:active {
   opacity: 0.2;
 }
 
-.disabled\:opacity-25:disabled {
+.active\:opacity-25:active {
   opacity: 0.25;
 }
 
-.disabled\:opacity-30:disabled {
+.active\:opacity-30:active {
   opacity: 0.3;
 }
 
-.disabled\:opacity-40:disabled {
+.active\:opacity-40:active {
   opacity: 0.4;
 }
 
-.disabled\:opacity-50:disabled {
+.active\:opacity-50:active {
   opacity: 0.5;
 }
 
-.disabled\:opacity-60:disabled {
+.active\:opacity-60:active {
   opacity: 0.6;
 }
 
-.disabled\:opacity-70:disabled {
+.active\:opacity-70:active {
   opacity: 0.7;
 }
 
-.disabled\:opacity-75:disabled {
+.active\:opacity-75:active {
   opacity: 0.75;
 }
 
-.disabled\:opacity-80:disabled {
+.active\:opacity-80:active {
   opacity: 0.8;
 }
 
-.disabled\:opacity-90:disabled {
+.active\:opacity-90:active {
   opacity: 0.9;
 }
 
-.disabled\:opacity-95:disabled {
+.active\:opacity-95:active {
   opacity: 0.95;
 }
 
-.disabled\:opacity-100:disabled {
+.active\:opacity-100:active {
   opacity: 1;
 }
 
@@ -38337,6 +38401,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-home-pharmaplus {
+    background-image: url('/img/medicamentos.jpg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -41910,6 +41978,66 @@ select {
   }
 
   .sm\:focus\:bg-opacity-100:focus {
+    --tw-bg-opacity: 1;
+  }
+
+  .sm\:active\:bg-opacity-0:active {
+    --tw-bg-opacity: 0;
+  }
+
+  .sm\:active\:bg-opacity-5:active {
+    --tw-bg-opacity: 0.05;
+  }
+
+  .sm\:active\:bg-opacity-10:active {
+    --tw-bg-opacity: 0.1;
+  }
+
+  .sm\:active\:bg-opacity-20:active {
+    --tw-bg-opacity: 0.2;
+  }
+
+  .sm\:active\:bg-opacity-25:active {
+    --tw-bg-opacity: 0.25;
+  }
+
+  .sm\:active\:bg-opacity-30:active {
+    --tw-bg-opacity: 0.3;
+  }
+
+  .sm\:active\:bg-opacity-40:active {
+    --tw-bg-opacity: 0.4;
+  }
+
+  .sm\:active\:bg-opacity-50:active {
+    --tw-bg-opacity: 0.5;
+  }
+
+  .sm\:active\:bg-opacity-60:active {
+    --tw-bg-opacity: 0.6;
+  }
+
+  .sm\:active\:bg-opacity-70:active {
+    --tw-bg-opacity: 0.7;
+  }
+
+  .sm\:active\:bg-opacity-75:active {
+    --tw-bg-opacity: 0.75;
+  }
+
+  .sm\:active\:bg-opacity-80:active {
+    --tw-bg-opacity: 0.8;
+  }
+
+  .sm\:active\:bg-opacity-90:active {
+    --tw-bg-opacity: 0.9;
+  }
+
+  .sm\:active\:bg-opacity-95:active {
+    --tw-bg-opacity: 0.95;
+  }
+
+  .sm\:active\:bg-opacity-100:active {
     --tw-bg-opacity: 1;
   }
 
@@ -48506,63 +48634,63 @@ select {
     opacity: 1;
   }
 
-  .sm\:disabled\:opacity-0:disabled {
+  .sm\:active\:opacity-0:active {
     opacity: 0;
   }
 
-  .sm\:disabled\:opacity-5:disabled {
+  .sm\:active\:opacity-5:active {
     opacity: 0.05;
   }
 
-  .sm\:disabled\:opacity-10:disabled {
+  .sm\:active\:opacity-10:active {
     opacity: 0.1;
   }
 
-  .sm\:disabled\:opacity-20:disabled {
+  .sm\:active\:opacity-20:active {
     opacity: 0.2;
   }
 
-  .sm\:disabled\:opacity-25:disabled {
+  .sm\:active\:opacity-25:active {
     opacity: 0.25;
   }
 
-  .sm\:disabled\:opacity-30:disabled {
+  .sm\:active\:opacity-30:active {
     opacity: 0.3;
   }
 
-  .sm\:disabled\:opacity-40:disabled {
+  .sm\:active\:opacity-40:active {
     opacity: 0.4;
   }
 
-  .sm\:disabled\:opacity-50:disabled {
+  .sm\:active\:opacity-50:active {
     opacity: 0.5;
   }
 
-  .sm\:disabled\:opacity-60:disabled {
+  .sm\:active\:opacity-60:active {
     opacity: 0.6;
   }
 
-  .sm\:disabled\:opacity-70:disabled {
+  .sm\:active\:opacity-70:active {
     opacity: 0.7;
   }
 
-  .sm\:disabled\:opacity-75:disabled {
+  .sm\:active\:opacity-75:active {
     opacity: 0.75;
   }
 
-  .sm\:disabled\:opacity-80:disabled {
+  .sm\:active\:opacity-80:active {
     opacity: 0.8;
   }
 
-  .sm\:disabled\:opacity-90:disabled {
+  .sm\:active\:opacity-90:active {
     opacity: 0.9;
   }
 
-  .sm\:disabled\:opacity-95:disabled {
+  .sm\:active\:opacity-95:active {
     opacity: 0.95;
   }
 
-  .sm\:disabled\:opacity-100:disabled {
+  .sm\:active\:opacity-100:active {
     opacity: 1;
   }
 
@@ -70793,6 +70921,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-home-pharmaplus {
+    background-image: url('/img/medicamentos.jpg');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -74366,6 +74498,66 @@ select {
   }
 
   .md\:focus\:bg-opacity-100:focus {
+    --tw-bg-opacity: 1;
+  }
+
+  .md\:active\:bg-opacity-0:active {
+    --tw-bg-opacity: 0;
+  }
+
+  .md\:active\:bg-opacity-5:active {
+    --tw-bg-opacity: 0.05;
+  }
+
+  .md\:active\:bg-opacity-10:active {
+    --tw-bg-opacity: 0.1;
+  }
+
+  .md\:active\:bg-opacity-20:active {
+    --tw-bg-opacity: 0.2;
+  }
+
+  .md\:active\:bg-opacity-25:active {
+    --tw-bg-opacity: 0.25;
+  }
+
+  .md\:active\:bg-opacity-30:active {
+    --tw-bg-opacity: 0.3;
+  }
+
+  .md\:active\:bg-opacity-40:active {
+    --tw-bg-opacity: 0.4;
+  }
+
+  .md\:active\:bg-opacity-50:active {
+    --tw-bg-opacity: 0.5;
+  }
+
+  .md\:active\:bg-opacity-60:active {
+    --tw-bg-opacity: 0.6;
+  }
+
+  .md\:active\:bg-opacity-70:active {
+    --tw-bg-opacity: 0.7;
+  }
+
+  .md\:active\:bg-opacity-75:active {
+    --tw-bg-opacity: 0.75;
+  }
+
+  .md\:active\:bg-opacity-80:active {
+    --tw-bg-opacity: 0.8;
+  }
+
+  .md\:active\:bg-opacity-90:active {
+    --tw-bg-opacity: 0.9;
+  }
+
+  .md\:active\:bg-opacity-95:active {
+    --tw-bg-opacity: 0.95;
+  }
+
+  .md\:active\:bg-opacity-100:active {
     --tw-bg-opacity: 1;
   }
 
@@ -80962,63 +81154,63 @@ select {
     opacity: 1;
   }
 
-  .md\:disabled\:opacity-0:disabled {
+  .md\:active\:opacity-0:active {
     opacity: 0;
   }
 
-  .md\:disabled\:opacity-5:disabled {
+  .md\:active\:opacity-5:active {
     opacity: 0.05;
   }
 
-  .md\:disabled\:opacity-10:disabled {
+  .md\:active\:opacity-10:active {
     opacity: 0.1;
   }
 
-  .md\:disabled\:opacity-20:disabled {
+  .md\:active\:opacity-20:active {
     opacity: 0.2;
   }
 
-  .md\:disabled\:opacity-25:disabled {
+  .md\:active\:opacity-25:active {
     opacity: 0.25;
   }
 
-  .md\:disabled\:opacity-30:disabled {
+  .md\:active\:opacity-30:active {
     opacity: 0.3;
   }
 
-  .md\:disabled\:opacity-40:disabled {
+  .md\:active\:opacity-40:active {
     opacity: 0.4;
   }
 
-  .md\:disabled\:opacity-50:disabled {
+  .md\:active\:opacity-50:active {
     opacity: 0.5;
   }
 
-  .md\:disabled\:opacity-60:disabled {
+  .md\:active\:opacity-60:active {
     opacity: 0.6;
   }
 
-  .md\:disabled\:opacity-70:disabled {
+  .md\:active\:opacity-70:active {
     opacity: 0.7;
   }
 
-  .md\:disabled\:opacity-75:disabled {
+  .md\:active\:opacity-75:active {
     opacity: 0.75;
   }
 
-  .md\:disabled\:opacity-80:disabled {
+  .md\:active\:opacity-80:active {
     opacity: 0.8;
   }
 
-  .md\:disabled\:opacity-90:disabled {
+  .md\:active\:opacity-90:active {
     opacity: 0.9;
   }
 
-  .md\:disabled\:opacity-95:disabled {
+  .md\:active\:opacity-95:active {
     opacity: 0.95;
   }
 
-  .md\:disabled\:opacity-100:disabled {
+  .md\:active\:opacity-100:active {
     opacity: 1;
   }
 
@@ -103249,6 +103441,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-home-pharmaplus {
+    background-image: url('/img/medicamentos.jpg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -106822,6 +107018,66 @@ select {
   }
 
   .lg\:focus\:bg-opacity-100:focus {
+    --tw-bg-opacity: 1;
+  }
+
+  .lg\:active\:bg-opacity-0:active {
+    --tw-bg-opacity: 0;
+  }
+
+  .lg\:active\:bg-opacity-5:active {
+    --tw-bg-opacity: 0.05;
+  }
+
+  .lg\:active\:bg-opacity-10:active {
+    --tw-bg-opacity: 0.1;
+  }
+
+  .lg\:active\:bg-opacity-20:active {
+    --tw-bg-opacity: 0.2;
+  }
+
+  .lg\:active\:bg-opacity-25:active {
+    --tw-bg-opacity: 0.25;
+  }
+
+  .lg\:active\:bg-opacity-30:active {
+    --tw-bg-opacity: 0.3;
+  }
+
+  .lg\:active\:bg-opacity-40:active {
+    --tw-bg-opacity: 0.4;
+  }
+
+  .lg\:active\:bg-opacity-50:active {
+    --tw-bg-opacity: 0.5;
+  }
+
+  .lg\:active\:bg-opacity-60:active {
+    --tw-bg-opacity: 0.6;
+  }
+
+  .lg\:active\:bg-opacity-70:active {
+    --tw-bg-opacity: 0.7;
+  }
+
+  .lg\:active\:bg-opacity-75:active {
+    --tw-bg-opacity: 0.75;
+  }
+
+  .lg\:active\:bg-opacity-80:active {
+    --tw-bg-opacity: 0.8;
+  }
+
+  .lg\:active\:bg-opacity-90:active {
+    --tw-bg-opacity: 0.9;
+  }
+
+  .lg\:active\:bg-opacity-95:active {
+    --tw-bg-opacity: 0.95;
+  }
+
+  .lg\:active\:bg-opacity-100:active {
     --tw-bg-opacity: 1;
   }
 
@@ -113418,63 +113674,63 @@ select {
     opacity: 1;
   }
 
-  .lg\:disabled\:opacity-0:disabled {
+  .lg\:active\:opacity-0:active {
     opacity: 0;
   }
 
-  .lg\:disabled\:opacity-5:disabled {
+  .lg\:active\:opacity-5:active {
     opacity: 0.05;
   }
 
-  .lg\:disabled\:opacity-10:disabled {
+  .lg\:active\:opacity-10:active {
     opacity: 0.1;
   }
 
-  .lg\:disabled\:opacity-20:disabled {
+  .lg\:active\:opacity-20:active {
     opacity: 0.2;
   }
 
-  .lg\:disabled\:opacity-25:disabled {
+  .lg\:active\:opacity-25:active {
     opacity: 0.25;
   }
 
-  .lg\:disabled\:opacity-30:disabled {
+  .lg\:active\:opacity-30:active {
     opacity: 0.3;
   }
 
-  .lg\:disabled\:opacity-40:disabled {
+  .lg\:active\:opacity-40:active {
     opacity: 0.4;
   }
 
-  .lg\:disabled\:opacity-50:disabled {
+  .lg\:active\:opacity-50:active {
     opacity: 0.5;
   }
 
-  .lg\:disabled\:opacity-60:disabled {
+  .lg\:active\:opacity-60:active {
     opacity: 0.6;
   }
 
-  .lg\:disabled\:opacity-70:disabled {
+  .lg\:active\:opacity-70:active {
     opacity: 0.7;
   }
 
-  .lg\:disabled\:opacity-75:disabled {
+  .lg\:active\:opacity-75:active {
     opacity: 0.75;
   }
 
-  .lg\:disabled\:opacity-80:disabled {
+  .lg\:active\:opacity-80:active {
     opacity: 0.8;
   }
 
-  .lg\:disabled\:opacity-90:disabled {
+  .lg\:active\:opacity-90:active {
     opacity: 0.9;
   }
 
-  .lg\:disabled\:opacity-95:disabled {
+  .lg\:active\:opacity-95:active {
     opacity: 0.95;
   }
 
-  .lg\:disabled\:opacity-100:disabled {
+  .lg\:active\:opacity-100:active {
     opacity: 1;
   }
 
@@ -135705,6 +135961,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-home-pharmaplus {
+    background-image: url('/img/medicamentos.jpg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -139278,6 +139538,66 @@ select {
   }
 
   .xl\:focus\:bg-opacity-100:focus {
+    --tw-bg-opacity: 1;
+  }
+
+  .xl\:active\:bg-opacity-0:active {
+    --tw-bg-opacity: 0;
+  }
+
+  .xl\:active\:bg-opacity-5:active {
+    --tw-bg-opacity: 0.05;
+  }
+
+  .xl\:active\:bg-opacity-10:active {
+    --tw-bg-opacity: 0.1;
+  }
+
+  .xl\:active\:bg-opacity-20:active {
+    --tw-bg-opacity: 0.2;
+  }
+
+  .xl\:active\:bg-opacity-25:active {
+    --tw-bg-opacity: 0.25;
+  }
+
+  .xl\:active\:bg-opacity-30:active {
+    --tw-bg-opacity: 0.3;
+  }
+
+  .xl\:active\:bg-opacity-40:active {
+    --tw-bg-opacity: 0.4;
+  }
+
+  .xl\:active\:bg-opacity-50:active {
+    --tw-bg-opacity: 0.5;
+  }
+
+  .xl\:active\:bg-opacity-60:active {
+    --tw-bg-opacity: 0.6;
+  }
+
+  .xl\:active\:bg-opacity-70:active {
+    --tw-bg-opacity: 0.7;
+  }
+
+  .xl\:active\:bg-opacity-75:active {
+    --tw-bg-opacity: 0.75;
+  }
+
+  .xl\:active\:bg-opacity-80:active {
+    --tw-bg-opacity: 0.8;
+  }
+
+  .xl\:active\:bg-opacity-90:active {
+    --tw-bg-opacity: 0.9;
+  }
+
+  .xl\:active\:bg-opacity-95:active {
+    --tw-bg-opacity: 0.95;
+  }
+
+  .xl\:active\:bg-opacity-100:active {
     --tw-bg-opacity: 1;
   }
 
@@ -145874,63 +146194,63 @@ select {
     opacity: 1;
   }
 
-  .xl\:disabled\:opacity-0:disabled {
+  .xl\:active\:opacity-0:active {
     opacity: 0;
   }
 
-  .xl\:disabled\:opacity-5:disabled {
+  .xl\:active\:opacity-5:active {
     opacity: 0.05;
   }
 
-  .xl\:disabled\:opacity-10:disabled {
+  .xl\:active\:opacity-10:active {
     opacity: 0.1;
   }
 
-  .xl\:disabled\:opacity-20:disabled {
+  .xl\:active\:opacity-20:active {
     opacity: 0.2;
   }
 
-  .xl\:disabled\:opacity-25:disabled {
+  .xl\:active\:opacity-25:active {
     opacity: 0.25;
   }
 
-  .xl\:disabled\:opacity-30:disabled {
+  .xl\:active\:opacity-30:active {
     opacity: 0.3;
   }
 
-  .xl\:disabled\:opacity-40:disabled {
+  .xl\:active\:opacity-40:active {
     opacity: 0.4;
   }
 
-  .xl\:disabled\:opacity-50:disabled {
+  .xl\:active\:opacity-50:active {
     opacity: 0.5;
   }
 
-  .xl\:disabled\:opacity-60:disabled {
+  .xl\:active\:opacity-60:active {
     opacity: 0.6;
   }
 
-  .xl\:disabled\:opacity-70:disabled {
+  .xl\:active\:opacity-70:active {
     opacity: 0.7;
   }
 
-  .xl\:disabled\:opacity-75:disabled {
+  .xl\:active\:opacity-75:active {
     opacity: 0.75;
   }
 
-  .xl\:disabled\:opacity-80:disabled {
+  .xl\:active\:opacity-80:active {
     opacity: 0.8;
   }
 
-  .xl\:disabled\:opacity-90:disabled {
+  .xl\:active\:opacity-90:active {
     opacity: 0.9;
   }
 
-  .xl\:disabled\:opacity-95:disabled {
+  .xl\:active\:opacity-95:active {
     opacity: 0.95;
   }
 
-  .xl\:disabled\:opacity-100:disabled {
+  .xl\:active\:opacity-100:active {
     opacity: 1;
   }
 
@@ -168161,6 +168481,10 @@ select {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .\32xl\:bg-home-pharmaplus {
+    background-image: url('/img/medicamentos.jpg');
+  }
+
   .\32xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -171734,6 +172058,66 @@ select {
   }
 
   .\32xl\:focus\:bg-opacity-100:focus {
+    --tw-bg-opacity: 1;
+  }
+
+  .\32xl\:active\:bg-opacity-0:active {
+    --tw-bg-opacity: 0;
+  }
+
+  .\32xl\:active\:bg-opacity-5:active {
+    --tw-bg-opacity: 0.05;
+  }
+
+  .\32xl\:active\:bg-opacity-10:active {
+    --tw-bg-opacity: 0.1;
+  }
+
+  .\32xl\:active\:bg-opacity-20:active {
+    --tw-bg-opacity: 0.2;
+  }
+
+  .\32xl\:active\:bg-opacity-25:active {
+    --tw-bg-opacity: 0.25;
+  }
+
+  .\32xl\:active\:bg-opacity-30:active {
+    --tw-bg-opacity: 0.3;
+  }
+
+  .\32xl\:active\:bg-opacity-40:active {
+    --tw-bg-opacity: 0.4;
+  }
+
+  .\32xl\:active\:bg-opacity-50:active {
+    --tw-bg-opacity: 0.5;
+  }
+
+  .\32xl\:active\:bg-opacity-60:active {
+    --tw-bg-opacity: 0.6;
+  }
+
+  .\32xl\:active\:bg-opacity-70:active {
+    --tw-bg-opacity: 0.7;
+  }
+
+  .\32xl\:active\:bg-opacity-75:active {
+    --tw-bg-opacity: 0.75;
+  }
+
+  .\32xl\:active\:bg-opacity-80:active {
+    --tw-bg-opacity: 0.8;
+  }
+
+  .\32xl\:active\:bg-opacity-90:active {
+    --tw-bg-opacity: 0.9;
+  }
+
+  .\32xl\:active\:bg-opacity-95:active {
+    --tw-bg-opacity: 0.95;
+  }
+
+  .\32xl\:active\:bg-opacity-100:active {
     --tw-bg-opacity: 1;
   }
 
@@ -178330,63 +178714,63 @@ select {
     opacity: 1;
   }
 
-  .\32xl\:disabled\:opacity-0:disabled {
+  .\32xl\:active\:opacity-0:active {
     opacity: 0;
   }
 
-  .\32xl\:disabled\:opacity-5:disabled {
+  .\32xl\:active\:opacity-5:active {
     opacity: 0.05;
   }
 
-  .\32xl\:disabled\:opacity-10:disabled {
+  .\32xl\:active\:opacity-10:active {
     opacity: 0.1;
   }
 
-  .\32xl\:disabled\:opacity-20:disabled {
+  .\32xl\:active\:opacity-20:active {
     opacity: 0.2;
   }
 
-  .\32xl\:disabled\:opacity-25:disabled {
+  .\32xl\:active\:opacity-25:active {
     opacity: 0.25;
   }
 
-  .\32xl\:disabled\:opacity-30:disabled {
+  .\32xl\:active\:opacity-30:active {
     opacity: 0.3;
   }
 
-  .\32xl\:disabled\:opacity-40:disabled {
+  .\32xl\:active\:opacity-40:active {
     opacity: 0.4;
   }
 
-  .\32xl\:disabled\:opacity-50:disabled {
+  .\32xl\:active\:opacity-50:active {
     opacity: 0.5;
   }
 
-  .\32xl\:disabled\:opacity-60:disabled {
+  .\32xl\:active\:opacity-60:active {
     opacity: 0.6;
   }
 
-  .\32xl\:disabled\:opacity-70:disabled {
+  .\32xl\:active\:opacity-70:active {
     opacity: 0.7;
   }
 
-  .\32xl\:disabled\:opacity-75:disabled {
+  .\32xl\:active\:opacity-75:active {
     opacity: 0.75;
   }
 
-  .\32xl\:disabled\:opacity-80:disabled {
+  .\32xl\:active\:opacity-80:active {
     opacity: 0.8;
   }
 
-  .\32xl\:disabled\:opacity-90:disabled {
+  .\32xl\:active\:opacity-90:active {
     opacity: 0.9;
   }
 
-  .\32xl\:disabled\:opacity-95:disabled {
+  .\32xl\:active\:opacity-95:active {
     opacity: 0.95;
   }
 
-  .\32xl\:disabled\:opacity-100:disabled {
+  .\32xl\:active\:opacity-100:active {
     opacity: 1;
   }
 

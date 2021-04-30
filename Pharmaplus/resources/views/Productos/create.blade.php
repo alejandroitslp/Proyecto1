@@ -2,64 +2,68 @@
     <div>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <form action="{{route('productos.store')}}" method="POST">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg grid grid-cols-2">
+                <div class="ml-14 mt-8">
+                    <form action="{{route('productos.store')}}" method="POST">
 
-                    @csrf
-            
-                    <label>
-                        Codigo de producto: 
+                        @csrf
+                
+                        <label>
+                            Codigo de producto: 
+                            <br>
+                            <div class="ml-8 mt-3">
+                            <input type="text" name="codigo" value={{old('codigo')}} >
+                            </div>
+                        </label>
+                
+                        @error('codigo')
+                            <br>
+                                <small>*{{$message}}</small>
+                            <br>
+                        @enderror
+                
                         <br>
-                        <div class="ml-8 mt-3">
-                        <input type="text" name="codigo" value={{old('codigo')}} >
-                        </div>
-                    </label>
-            
-                    @error('codigo')
+                        <label>
+                             Nombre:
+                             <br>
+                             <div class="ml-8 mt-3">
+                             <input type="text" name="name" value={{old('name')}}> 
+                             </div>
+                        </label>
+                
+                        @error('name')
+                            <br>
+                                <small>*{{$message}}</small>
+                            <br>
+                        @enderror
+                
                         <br>
-                            <small>*{{$message}}</small>
+                        <label>
+                            Descripcion:
+                            <br> 
+                            <div class="ml-8 mt-3">
+                            <textarea name="descripcion" rows="5">{{old('descripcion')}}</textarea>
+                            </div>
+                        </label>
+                
+                        @error('descripcion')
+                            <br>
+                                <small>*{{$message}}</small>
+                            <br>
+                        @enderror
+                
                         <br>
-                    @enderror
-            
-                    <br>
-                    <label>
-                         Nombre:
-                         <br>
-                         <div class="ml-8 mt-3">
-                         <input type="text" name="name" value={{old('name')}}> 
-                         </div>
-                    </label>
-            
-                    @error('name')
+                        <label>
+                            Unidad de Producto:
+                            <br>
+                            <div class="ml-8 mt-3">
+                            <input type="text" name="unidad" placeholder="Unidad" value="Unidad" readonly> 
+                            </div>
+                        </label>
                         <br>
-                            <small>*{{$message}}</small>
-                        <br>
-                    @enderror
-            
-                    <br>
-                    <label>
-                        Descripcion:
-                        <br> 
-                        <div class="ml-8 mt-3">
-                        <textarea name="descripcion" rows="5">{{old('descripcion')}}</textarea>
-                        </div>
-                    </label>
-            
-                    @error('descripcion')
-                        <br>
-                            <small>*{{$message}}</small>
-                        <br>
-                    @enderror
-            
-                    <br>
-                    <label>
-                        Unidad de Producto:
-                        <br>
-                        <div class="ml-8 mt-3">
-                        <input type="text" name="unidad" placeholder="Unidad" value="Unidad" readonly> 
-                        </div>
-                    </label>
-                    <br>
+                        
+                </div>
+                <div class="ml-14 mt-8">
                     <label>
                         Precio de Venta:
                         <br>
@@ -117,6 +121,7 @@
                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8"> Enviar formulario</button>
                     </div>
                 </form>
+                </div>
             </div>
         </div>
     </div>

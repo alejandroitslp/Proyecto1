@@ -10,6 +10,9 @@ module.exports = {
 
     theme: {
         extend: {
+            backgroundImage: {
+                'home-pharmaplus': "url('/img/medicamentos.jpg')",
+            },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
@@ -18,7 +21,8 @@ module.exports = {
 
     variants: {
         extend: {
-            opacity: ['disabled'],
+            backgroundOpacity: ['active'],
+            opacity: ['active'],
         },
     },
 

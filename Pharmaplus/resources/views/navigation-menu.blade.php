@@ -18,6 +18,9 @@
                     <x-jet-nav-link :active="request()->routeIs('productos.index')" href="{{route('productos.index')}}">
                         Productos
                     </x-jet-nav-link>
+                    <x-jet-nav-link :active="request()->routeIs('contactanos.index')" href="{{route('contactanos.index')}}">
+                        Contactanos
+                    </x-jet-nav-link>
                 </div>
             </div>
 
@@ -128,9 +131,9 @@
                         
                     @else
                     <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                    {{--<a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>--}}
                     
-                        
+                          
                     @endauth
                 </div>
             </div>
@@ -156,6 +159,10 @@
             <x-jet-responsive-nav-link href="{{ route('productos.index') }}" :active="request()->routeIs('productos.index')">
                 Productos
             </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('contactanos.index') }}" :active="request()->routeIs('contactanos.index')">
+                Contactanos
+            </x-jet-responsive-nav-link>
+
         </div>
 
         <!-- Responsive Settings Options -->
@@ -234,9 +241,9 @@
         <x-jet-responsive-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
             Login
         </x-jet-responsive-nav-link>
-        <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
+        {{-- <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
             Register
-        </x-jet-responsive-nav-link>
+        </x-jet-responsive-nav-link> --}}
         @endauth
     </div>
 </nav>

@@ -5,18 +5,28 @@ namespace App\Http\Controllers;
 use App\Models\Producto;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreProducto;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class ProductoController extends Controller
 {
     //
-    public function index()
+    public function index(Request $request)
     {
         //
-        $product = Producto::orderBy('nombre_producto','asc')->paginate();
-        //all();
         
-        
+        if(($request->nombreproducto)!=null)
+        {
+            $product=Producto::where('nombre_producto', 'LIKE', '%'.$request->nombreproducto.'%')->get();
+            //('nombre_producto', 'LIKE', '%'.$search.'%')->get();
+            //('cod_producto', '=' ,$request->codigo)->get();
+        }
+        else
+        {
+            $product = Producto::orderBy('nombre_producto','asc')->paginate(20);
+        }
+
         return view('Productos.index',compact('product'));
+        return $product;
     }
     
     public function create()
@@ -48,7 +58,7 @@ class ProductoController extends Controller
             'precio_compra' => $request->precioCompra,
             'stock_producto' => $request->stock,
             'cod_categoriaFK' => $request->categoria,
-        ]); //Tampoco se puede usar debido a los cambios en db y forms name
+        ]); 
 
         //$producto =Producto::create($request->all()); <---- El metodo mas practico, pero siempre y cuando coincidan atributos del form y de db
 
@@ -103,4 +113,6 @@ class ProductoController extends Controller
         $producto->delete();
         return redirect()->route('productos.index');
     }
+
+    
 }
