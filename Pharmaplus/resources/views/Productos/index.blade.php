@@ -23,7 +23,7 @@
                         <a href="{{route('productos.index')}}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-1 mt-2">Recargar pagina</a>
                     </form>
                 </div>
-                
+                <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-6 mt-2" href="{{route('pdf.generatePDF')}}">Generar PDF</a>
             </div>
             
         </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductoController;
 use App\Mail\ContactanosMailable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,5 @@ Route::post('contactanos', [ContactanosController::class, 'store'])->name('conta
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');})->name('dashboard');
 Route::middleware(['auth:sanctum', 'verified'])->resource('Productos', ProductoController::class)->names('productos')->parameters(['Productos'=>'producto']);
+
+Route::get('generate-pdf', [PDFController::class, 'generatePDF'])->name('pdf.generatePDF');

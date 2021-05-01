@@ -14,7 +14,6 @@
                 <div class="mt-4">
                     <p><a href="{{route('productos.index')}}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded ml-6 mt-2 "> Volver a Productos </a></p><br>
                     <p><a href="{{route('productos.edit', $producto)}}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded ml-6 mt-4 ">Editar</a></p>
-
                     <form action="{{route('productos.destroy', $producto)}}" method="POST">
                     @csrf
                     @method('delete')
